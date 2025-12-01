@@ -26,7 +26,7 @@
             padding: 30px;
             text-align:center;
             border-radius: 10px;}
-     section{background: linear-gradient(lightskyblue,lightpink,yellow,#E0B0FF);
+     section{background: linear-gradient(limegreen,yellow,white);
                 padding: 15px;
                 margin: 20px auto;
                 width:70%;
@@ -34,6 +34,22 @@
         p{text-indent: 2em;}
 
         .zoom:hover{transform: scale(1.5); cursor:pointer;}
+  img:hover{animation: glowcolor 1.2s infinite alternate;}
+  @keyframes glowcolors{
+ 0%{box-shadow: 0 0 20px hotpink;}
+25%{box-shadow: 0 0 20px skyblue;}
+75%{box-shadow: 0 0 20px gold;}
+100%{box-shadow: 0 0 20px red;}
+  }
+
+  .blink-bg{
+     animation: blinkbg 1s infinite alternate;
+     padding: 3px 6px;
+  }
+  @keyframes blinkbg{
+    0%{background: yellow;}
+    100%{background: orange;}
+  }
     </style>
   </head>
   <body background="https://www.wazzadu.com/thumbs/article/resize/760/article_5a1a5b40-2d15-11e8-bf20-f161deedc84d.jpg">
